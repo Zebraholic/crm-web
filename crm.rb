@@ -8,6 +8,10 @@ get '/' do
 end
 
 get '/contacts' do
-	@crm_app_name = "My CRM"
+	@contacts = []
+  @contacts << Contact.new("Rob", "Tavares", "rob@roberttavares.com", "Mad Props")
+  @contacts << Contact.new("Kill", "Bill", "kill@bill.com", "Co-Founder")
+  @contacts << Contact.new("Anne", "Hathaway", "anne@hathaway.com", "Instructor")
+
 	erb :contacts
 end
