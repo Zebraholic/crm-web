@@ -5,6 +5,14 @@ require 'sinatra'
 
 $rolodex = Rolodex.new
 
+# Temporary fake data so that we always find contact with id 1000.
+$rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+
+get "/contacts/10000" do
+  @contact = $rolodex.find(1000)
+  erb :show_contact
+end
+
 get '/' do
 	@crm_app_name = "CRM"
 	erb :index
