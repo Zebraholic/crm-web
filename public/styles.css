@@ -1,5 +1,5 @@
  * {
-	margin: 0;
+	margin: 50;
 	padding: 5px;
 }
 
@@ -7,18 +7,27 @@ header {font: 16px Helvetica, Sans-Serif;
 }
 
 body {
-    background-image: url(background1.png);
-   	#background-repeat: no-repeat;
-	font: 16px Helvetica, Sans-Serif;
+    background-image: url(background.jpg);
+    background-size: 100%;
+   	background-repeat: no-repeat;
+	font: 24px Helvetica, Sans-Serif;
+	color: #0066cc;
 	line-height: 24px;
 	font-weight: bold;
 	font-size: 18px;
 	text-align: left;
+	margin-left: 150px;
+	margin-top: 300px;
 	padding: 0 26px 0 0;
-	width: 400px;
-	float: left;
-	height: 0px;
+	width: 100%;
 
 }
 
-footer {font: 11px Helvetica, Sans-Serif;}
+footer {
+		font: 16px Helvetica, Sans-Serif;
+		 width: 100%;
+    height: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+		}
