@@ -8,6 +8,9 @@
 <p><strong>Note:</strong></p>
 <p><%= @contact.note %></p>
 
+<li><a href="/contacts/edit">Edit contact information</a></li>
+
+
 <form action="/contacts/<%= @contact.id %>" method="post">
   <input type="hidden" name="_method" value="delete">
   <input type="submit" name="Delete Contact">
