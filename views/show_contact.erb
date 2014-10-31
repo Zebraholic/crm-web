@@ -3,7 +3,7 @@
 <p><strong>Note:</strong></p>
 <p><%= @contact.note %></p>
 
-<li><a href="/contacts/edit">Edit contact information</a></li>
+<li><a href="/contacts/<%= @contact.id %>/edit">Edit contact information</a></li>
 
 
 <form action="/contacts/<%= @contact.id %>" method="post">
