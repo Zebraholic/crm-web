@@ -1,13 +1,10 @@
 <h2>All Contacts</h2>
 
 
+<a href="/contacts/new">Add a new contact</a>
 
-<li><a href="/contacts/new">Add a new contact</a></li>
-<li><a href="/contacts/:id/edit">Edit contact information</a></li>
-
-
-<ul>
+<p>
   <% @contacts.each do |contact| %>
     <li><a href="/contacts/<%= contact.id %>"><%= contact.first_name %> <%= contact.last_name %></a></li>
   <% end %>
-</ul>
+</p>
